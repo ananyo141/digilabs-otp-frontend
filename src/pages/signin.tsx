@@ -36,13 +36,16 @@ const SignIn = (props: Props) => {
           <div className="relative inline">
             <RxEyeNone className="absolute top-1 opacity-75 right-5" />
           </div>
-          <Link href="/verification">
-            <button className="p-2 w-full text-xl h-16 font-bold tracking-wide rounded-md bg-blue-600 text-white">
+          <Link className="block" href="/verification">
+            <button className="w-full text-xl h-16 font-bold tracking-wide rounded-md bg-blue-600 text-white">
               Next
             </button>
           </Link>
           <p className="font-bold text-blue-600 text-center">
             Forgot your password?
+          </p>
+          <p className="font-light">
+            Not member? <span className="font-bold text-blue-600 cursor-pointer"> Create account</span>
           </p>
         </div>
         <Image src={cardImage} alt="Card Image" />
