@@ -1,5 +1,6 @@
 import cardImage from "../assets/card.png";
 import Image from "next/image";
+import Link from "next/link";
 import { RxEyeNone } from "react-icons/rx";
 
 import logo from "../assets/logo.png";
@@ -35,9 +36,11 @@ const SignIn = (props: Props) => {
           <div className="relative inline">
             <RxEyeNone className="absolute top-1 opacity-75 right-5" />
           </div>
-          <button className="p-2 w-full text-xl h-16 font-bold tracking-wide rounded-md bg-blue-600 text-white">
-            Next
-          </button>
+          <Link href="/verification">
+            <button className="p-2 w-full text-xl h-16 font-bold tracking-wide rounded-md bg-blue-600 text-white">
+              Next
+            </button>
+          </Link>
           <p className="font-bold text-blue-600 text-center">
             Forgot your password?
           </p>
