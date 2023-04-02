@@ -44,8 +44,11 @@ const Verification = (props: Props) => {
             <div className="flex gap-3">
               {Array(6)
                 .fill(0)
-                .map((_) => (
-                  <input className="w-11 overflow-clip border border-blue-800 active:shadow-2xl active:shadow-blue-900 drop-shadow-lg h-12 rounded-xl p-2" />
+                .map((_, i) => (
+                  <input
+                    key={i}
+                    className="w-11 overflow-clip border border-blue-800 active:shadow-2xl active:shadow-blue-900 drop-shadow-lg h-12 rounded-xl p-2"
+                  />
                 ))}
             </div>
             <div className="flex justify-between">
