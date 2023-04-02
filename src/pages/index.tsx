@@ -1,6 +1,4 @@
 import Head from "next/head";
-import logo from "../assets/logo.png";
-import Image from "next/image";
 
 import SignIn from "./signin";
 
@@ -14,7 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Image src={logo} className="w-12 m-10" alt="SystemPackage" />
         <SignIn />
       </main>
     </>

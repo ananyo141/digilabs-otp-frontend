@@ -2,13 +2,15 @@ import cardImage from "../assets/card.png";
 import Image from "next/image";
 import { RxEyeNone } from "react-icons/rx";
 
+import logo from "../assets/logo.png";
 type Props = {};
 
 const SignIn = (props: Props) => {
   return (
-    <section className="p-4 h-screen">
-      <div className="flex gap-5 justify-center">
-        <div className="space-y-8">
+    <section className="p-4 flex items-center justify-center h-screen">
+      <div className="flex gap-14 items-center justify-center">
+        <div className="space-y-12">
+          <Image src={logo} className="absolute w-8 h-8 top-8" alt="logo" />
           <h2 className="text-4xl font-semibold">
             Welcome to
             <br /> Systempackage
