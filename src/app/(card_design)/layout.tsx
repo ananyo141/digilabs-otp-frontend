@@ -10,10 +10,10 @@ export default function RootLayout({
 }) {
   return (
     <div className="min-h-screen flex items-center">
-      <section className="container max-w-6xl mx-auto">
+      <section className="container max-w-6xl mx-auto lg:px-9">
         {/* Root section that is a centered container */}
         {/* Header with logo and create account link */}
-        <div className="flex justify-between items-center">
+        <div className="flex mb-9 justify-center gap-44 lg:justify-between">
           <Image src={logo} className="w-8 h-8" alt="logo" />
           <p>
             Not member?{" "}
@@ -24,17 +24,21 @@ export default function RootLayout({
         </div>
         {/* Header ended */}
         {/* Card Container */}
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-center lg:justify-between gap-4">
           <div>
             {children}
-            <p>
+            <p className="mt-10">
               Not member?{" "}
               <span className="font-bold text-blue-600 cursor-pointer">
                 Create account
               </span>
             </p>
           </div>
-          <Image src={cardImage} className="w-1/2" alt="Card Image" />
+          <Image
+            src={cardImage}
+            className="hidden w-0 lg:block lg:w-1/2"
+            alt="Card Image"
+          />
         </div>
         {/* Card Container ended */}
       </section>
