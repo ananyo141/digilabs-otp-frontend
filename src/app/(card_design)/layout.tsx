@@ -13,9 +13,9 @@ export default function RootLayout({
       <section className="container max-w-6xl mx-auto lg:px-9">
         {/* Root section that is a centered container */}
         {/* Header with logo and create account link */}
-        <div className="flex mb-9 justify-center gap-44 lg:justify-between">
+        <div className="flex mb-16 justify-center gap-44 lg:justify-between">
           <Image src={logo} className="w-8 h-8" alt="logo" />
-          <p>
+          <p className="lg:hidden">
             Not member?{" "}
             <span className="font-bold text-blue-600 cursor-pointer">
               Create account
@@ -27,7 +27,7 @@ export default function RootLayout({
         <div className="flex items-center justify-center lg:justify-between gap-4">
           <div>
             {children}
-            <p className="mt-10">
+            <p className="hidden lg:block mt-20">
               Not member?{" "}
               <span className="font-bold text-blue-600 cursor-pointer">
                 Create account
