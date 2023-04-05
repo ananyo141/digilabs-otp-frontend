@@ -18,9 +18,9 @@ const Verification = (props: Props) => {
 
   return (
     <section className="container p-4 mx-auto">
-      <div className="lg:hidden flex justify-between md:justify-evenly lg:gap-96">
+      <div className="flex justify-evenly lg:gap-96">
         <Image src={logo} className="w-8 h-8" alt="logo" />
-        <h3 className="">
+        <h3 className="lg:invisible">
           Not member
           <span className="font-bold text-blue-600 cursor-pointer">
             {" "}
