@@ -1,8 +1,10 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import cardImage from "../assets/card.png";
+import cardImage from "@src/assets/card.png";
 import Image from "next/image";
 
-import logo from "../assets/logo.png";
+import logo from "@src/assets/logo.png";
 import Link from "next/link";
 type Props = {};
 
